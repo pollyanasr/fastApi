@@ -16,6 +16,10 @@ __pycache__/
 # Variáveis de ambiente
 .env
 
+# Banco de dados local
+*.db
+*.sqlite3
+
 # Sistema operacional
 Thumbs.db
 .DS_Store
