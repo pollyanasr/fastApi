@@ -1,4 +1,4 @@
-from typing import Annotated, List
+from typing import Annotated, List, Optional
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, HTTPException, Path
@@ -34,6 +34,7 @@ class UserResponse(BaseModel):
     last_name: str
     is_active: bool
     role: str
+    phone_number: Optional[str] = None
 
 class UserVerification(BaseModel):
     password: str
